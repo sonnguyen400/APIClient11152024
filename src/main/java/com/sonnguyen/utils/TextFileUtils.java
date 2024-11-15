@@ -8,6 +8,7 @@ import java.util.List;
 public class TextFileUtils {
     public static void saveListAlbums(List<Album> albums){
         File file=new File("albums.txt");
+
         if(!file.exists()) {
             try {
                 if(!file.createNewFile()) throw new IOException();
